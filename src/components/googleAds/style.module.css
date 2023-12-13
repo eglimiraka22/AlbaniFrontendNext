@@ -1,0 +1,10 @@
+.adsbygoogle {
+  width: 100%;
+    height: 324px;
+    background: url('./../../assets/Rectangle\ 7.png'),no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,11 @@
+.adsbygoogle2 {
+    width: 100%;
+    max-width: 380px;
+    height: 155px;
+      background: url('./../../assets/ads2.png'),no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    

@@ -1,0 +1,101 @@
+.containerSlider {
+  position: relative; /* Add this line to make the positioning of absolute elements relative to this container */
+  margin: auto;
+  height: 55vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+.containerSlider .slide-container img {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  object-fit: cover;
+}
+
+.slide-container {
+  position: relative; /* Add this line to establish a stacking context */
+  z-index: 111;
+  height: 55vh;
+  z-index: 1;
+}
+
+.slide-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.slide-content-header {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  pointer-events: none;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.slide-content-header h2 {
+  background-color: rgb(0, 0, 0, 0.8);
+  margin-left: 2rem;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding: 2rem;
+  z-index: 111;
+  border-radius: 10px;
+  color: white;
+}
+
+.shop-now-button:hover {
+  background-color: #333; /* Change the background color on hover */
+}
+
+@media (width>=1200px) {
+  .slide-content-header h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  .containerSlider img {
+    height: 15em;
+  }
+
+  .containerSlider {
+    height: 45vh;
+  }
+
+  .slide-container {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .containerSlider img {
+    height: 20em;
+  }
+
+
+  .slide-content h2 {
+    font-size: 1.5em;
+    margin-block: 10px;
+  }
+  .containerSlider {
+    height: 35vh;
+  }
+
+  .slide-container {
+    height: 35vh;
+  }
+}

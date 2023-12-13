@@ -1,0 +1,105 @@
+.card-more-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 50.5px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem ;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.card-more-image {
+  height: 125px;
+  width: 100%;
+  max-width: 281px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+
+}
+
+
+.card-more-content {
+    width: 100%;
+    max-width: 751px;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ margin: auto auto;
+}
+
+.card-more-content h1 {
+    color: #000;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.915%; /* 26.383px */
+    letter-spacing: 1px;
+}
+
+.card-more-content p {
+    color: #000;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.915%; /* 19.787px */
+    letter-spacing: 0.75px;
+}
+
+@media (width <= 768px) {
+    .card-more-container {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        max-width: 550px;
+        padding: 1rem;
+      }
+      .card-more-image {
+        height: 225px;
+        width: 100%;
+        max-width: 100%;
+        
+      
+      }
+      
+      
+      .card-more-content {
+          width: 100%;
+          max-width: 751px;
+       height: fit-content;
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       margin: auto auto;
+      }
+      
+      .card-more-content h1 {
+          color: #000;
+      
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 131.915%; /* 26.383px */
+          letter-spacing: 1px;
+      }
+      
+      .card-more-content p {
+          color: #000;
+      
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 131.915%; /* 19.787px */
+          letter-spacing: 0.75px;
+      }
+      
+}
